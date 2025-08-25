@@ -1,3 +1,5 @@
+#This is the file for me to practice my database knowledge
+
 import sqlite3
 connection = sqlite3.connect("people.db")
 

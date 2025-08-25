@@ -1,8 +1,14 @@
+#This is the file that is for me to test and learn new conce=epts as I icorporate them
+#into my code
+import os
 import finnhub
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
+API_KEY = os.getenv("FINNHUB_KEY")
 
 
-API_KEY = 'd1himi1r01qsvr2ae0mgd1himi1r01qsvr2ae0n0'
 finnhub_client = finnhub.Client(api_key=API_KEY)
 
 news = finnhub_client.general_news('general', min_id=0)
