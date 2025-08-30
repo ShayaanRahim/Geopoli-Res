@@ -87,4 +87,9 @@ def quick_dbcheck():
     print("Total rows in articles:", cursor.fetchone()[0])
 
 def text_empty():
-    pass
+    """
+
+    if the full_text = None
+        pull the url from the database
+        
+    """
