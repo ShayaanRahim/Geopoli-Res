@@ -62,7 +62,6 @@ def get_fulltext(sing_article):
         entire_text = specArticle.text
         return entire_text
     except Exception:
-        entire_text = None
         return entire_text
 
 def insert_intoDB(article_db, ent_text):
